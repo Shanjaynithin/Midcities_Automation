@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.midcities.testcases.Login_Positive_Case">
+        <methods>
+          <include name="setupSuite"/>
+          <include name="loginIntoTheApplication"/>
+          <include name="finish"/>
+          <include name="screenshotHandler"/>
+          <include name="startUp"/>
+        </methods>
+      </class> <!-- com.midcities.testcases.Login_Positive_Case -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
