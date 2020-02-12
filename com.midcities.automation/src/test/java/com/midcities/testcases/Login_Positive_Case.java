@@ -7,7 +7,6 @@ import com.midcities.pages.LoginPageElements;
 
 public class Login_Positive_Case extends BaseClass{
 	
-	
 	@Test
 	public void loginIntoTheApplication() {
 		
@@ -17,9 +16,7 @@ public class Login_Positive_Case extends BaseClass{
 		
 		logger.info("Starting Application");
 		
-		loginFunc.Login(excel.getStringCellData("Login_positive", 1, 0), excel.getStringCellData("Login_positive", 1, 1));
-		
-		logger.pass("Login done successfully");
+		loginFunc.Login_Positive(excel.getStringCellData("Login", 1, 0), excel.getStringCellData("Login", 1, 1));
 		
 	}
 	

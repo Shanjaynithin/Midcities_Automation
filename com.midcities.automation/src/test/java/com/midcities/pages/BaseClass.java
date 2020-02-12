@@ -50,9 +50,11 @@ public class BaseClass {
 	}
 
 	@AfterClass
-	public void finish() {
+	public void finish() throws InterruptedException {
+		
+		 Thread.sleep(3000);
 
-		// BrowserConfig.quitBrowser(driver);
+		 BrowserConfig.quitBrowser(driver);
 
 	}
 
