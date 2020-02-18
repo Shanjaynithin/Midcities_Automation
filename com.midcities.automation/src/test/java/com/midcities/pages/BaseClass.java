@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
@@ -21,10 +22,10 @@ import com.midcities.utility.Helper;
 
 public class BaseClass {
 
-	public WebDriver driver;
-	public ExcelDataProvider excel;
-	public ConfigDataProvider config;
-	public ExtentReports reports;
+	public static WebDriver driver;
+	public static ExcelDataProvider excel;
+	public static ConfigDataProvider config;
+	public static ExtentReports reports;
 	public ExtentTest logger;
 
 	@BeforeSuite
@@ -44,18 +45,17 @@ public class BaseClass {
 
 	@BeforeClass
 	public void startUp() {
-
-		driver = BrowserConfig.startApplication(driver, config.getBrowser(), config.getUrl());
-
+		
+		driver = BrowserConfig.startApplication(config.getBrowser(), config.getUrl());
+		
 	}
 
 	@AfterClass
 	public void finish() throws InterruptedException {
 		
-		 Thread.sleep(3000);
-
+		 Thread.sleep(2000);
+		 
 		 BrowserConfig.quitBrowser(driver);
-
 	}
 
 	@AfterMethod

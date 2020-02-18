@@ -11,7 +11,9 @@ import com.paulhammant.ngwebdriver.NgWebDriver;
 
 public class BrowserConfig {
 	
-	public static WebDriver startApplication(WebDriver driver, String browsername, String AppUrl) {
+	public static WebDriver startApplication(String browsername, String AppUrl) {
+		
+		WebDriver driver = null;
 		
 		if(browsername.equalsIgnoreCase("chrome")) {
 			
@@ -39,7 +41,7 @@ public class BrowserConfig {
 		driver.get(AppUrl);
 		
 	    driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-		  
+	    
 		return driver;
 	}
 	
@@ -47,7 +49,11 @@ public class BrowserConfig {
 	
 	public static void quitBrowser(WebDriver driver) {
 		
+		System.out.println("Before quitting the ref varibale value: "+driver);
+		
 		driver.quit();
+		
+		System.out.println("After quitting the ref varibale value: "+driver);
 		
 	}
 

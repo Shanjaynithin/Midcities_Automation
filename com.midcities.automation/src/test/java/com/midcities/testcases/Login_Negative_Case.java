@@ -18,5 +18,4 @@ public class Login_Negative_Case extends BaseClass{
 		
 	}
 	
-	
 }

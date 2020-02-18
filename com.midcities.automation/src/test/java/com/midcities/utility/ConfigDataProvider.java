@@ -13,11 +13,14 @@ public class ConfigDataProvider {
 		File src = new File("./Config/config.properties");
 
 		try {
+			
 			FileInputStream fis = new FileInputStream(src);
 
 			pro = new Properties();
 
 			pro.load(fis);
+			
+			fis.close();
 
 		} catch (Exception e) {
 
@@ -28,6 +31,7 @@ public class ConfigDataProvider {
 	public String getDataFromConfig(String keyToSearch) {
 
 		return pro.getProperty(keyToSearch);
+		
 	}
 
 	public String getBrowser() {

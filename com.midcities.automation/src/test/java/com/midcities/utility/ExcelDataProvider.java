@@ -17,6 +17,9 @@ public class ExcelDataProvider {
 			FileInputStream fis = new FileInputStream(src);
 
 			wb = new XSSFWorkbook(fis);
+			
+			fis.close();
+			
 		} catch (Exception e) {
 
 			System.out.println("Unable to read excel file" + e.getMessage());
