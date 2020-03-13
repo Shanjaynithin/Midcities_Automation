@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Login_Positive">
+  <test name="Midcities" preserve-order="true">
     <classes>
-      <class name="com.midcities.testcases.Login_Positive_Case"/>
-      <class name="com.midcities.testcases.Login_Negative_Case"/>
+    <!--  --><class name="com.midcities.testcases.Login_Negative_Case"/>
+    <class name="com.midcities.testcases.Login_Positive_Case"/>
+    <class name="com.midcities.testcases.User_Positive_Case"/>
+    <class name="com.midcities.testcases.User_Negative_Case"/>
+    <class name="com.midcities.testcases.Customer_Positive_Case"/>
+    <class name="com.midcities.testcases.Customer_Negative_Case"/>
+    <class name="com.midcities.testcases.Location_Positive_Case"/>
+    <class name="com.midcities.testcases.Location_Negative_Case"/>
+    <class name="com.midcities.testcases.Chassis_Positive_Case"/>
+    <class name="com.midcities.testcases.Chassis_Negative_Case"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

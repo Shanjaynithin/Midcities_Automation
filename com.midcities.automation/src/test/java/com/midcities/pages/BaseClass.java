@@ -30,8 +30,8 @@ public class BaseClass {
 
 	@BeforeSuite
 	public void setupSuite() {
-		
-		//This is base class
+
+		// This is base class
 
 		excel = new ExcelDataProvider();
 		config = new ConfigDataProvider();
@@ -45,17 +45,17 @@ public class BaseClass {
 
 	@BeforeClass
 	public void startUp() {
-		
+
 		driver = BrowserConfig.startApplication(config.getBrowser(), config.getUrl());
-		
+
 	}
 
 	@AfterClass
 	public void finish() throws InterruptedException {
-		
-		 Thread.sleep(2000);
-		 
-		 BrowserConfig.quitBrowser(driver);
+
+		Thread.sleep(3000);
+
+		BrowserConfig.quitBrowser(driver);
 	}
 
 	@AfterMethod
@@ -65,14 +65,14 @@ public class BaseClass {
 
 			// Helper.captureScreenshot(driver,result.getName());
 
-				logger.fail("Test failed", MediaEntityBuilder
-						.createScreenCaptureFromPath(Helper.captureScreenshot(driver, result.getName())).build());
-			
+			logger.fail("Test failed", MediaEntityBuilder
+					.createScreenCaptureFromPath(Helper.captureScreenshot(driver, result.getName())).build());
+
 		} else if (result.getStatus() == ITestResult.SUCCESS) {
 
-				logger.pass("Test passed", MediaEntityBuilder
-						.createScreenCaptureFromPath(Helper.captureScreenshot(driver, result.getName())).build());
-		} 
+			logger.pass("Test passed", MediaEntityBuilder
+					.createScreenCaptureFromPath(Helper.captureScreenshot(driver, result.getName())).build());
+		}
 
 		reports.flush();
 	}

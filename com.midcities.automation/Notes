@@ -1,0 +1,5 @@
+
+Notes and Tips:
+
+1. In the Page classes do not use the assertion in the same method where the elements are defined, 
+as the methods cannot be reused again. User separate methods for assertion.

@@ -45,16 +45,9 @@ public class BrowserConfig {
 		return driver;
 	}
 	
-	
-	
 	public static void quitBrowser(WebDriver driver) {
 		
-		System.out.println("Before quitting the ref varibale value: "+driver);
-		
 		driver.quit();
-		
-		System.out.println("After quitting the ref varibale value: "+driver);
-		
 	}
 
 }
