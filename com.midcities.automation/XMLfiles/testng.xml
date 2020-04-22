@@ -19,7 +19,7 @@
     <class name="com.midcities.testcases.GeneralRouteRate_Negative_Case"/>
     <class name="com.midcities.testcases.AccessorialCharges_Positive_Case"/>
     <class name="com.midcities.testcases.AccessorialCharges_Negative_Case"/>
-    <class name="com.midcities.testcases.DriverRates_Positive_Case"/>
+    <class name="com.midcities.testcases.DriverRates_Positive_Cases"/>
     <class name="com.midcities.testcases.DriverRates_Negative_Case"/>
     <class name="com.midcities.testcases.Orders_Positive_Case"/>
     <class name="com.midcities.testcases.Orders_Negative_Case"/>
