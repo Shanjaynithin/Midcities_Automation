@@ -36,7 +36,7 @@ public class LoginPageElements {
 		  
 		driver.findElement(By.id("mat-input-1")).sendKeys(pass);
 		
-		driver.findElement(ByAngular.buttonText("SIGN IN"));
+		driver.findElement(ByAngular.buttonText("SIGN IN")).click();
 		
 		String error = driver.findElement(By.cssSelector("small[class*='form-error-msg']")).getText(); 
 		

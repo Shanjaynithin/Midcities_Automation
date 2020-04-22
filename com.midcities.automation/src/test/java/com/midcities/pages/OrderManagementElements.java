@@ -159,7 +159,7 @@ public class OrderManagementElements extends BaseClass {
 		Thread.sleep(2000);
 
 		// Clicking on the Create Order button //
-		driver.findElement(ByAngular.buttonText(" Create New Order ")).click();
+		driver.findElement(ByAngular.buttonText("Create New Order")).click();
 		
 		Thread.sleep(2000);
 		

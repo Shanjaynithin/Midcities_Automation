@@ -59,7 +59,7 @@ public class CustomerManagementElements extends BaseClass {
 
 		driver.findElement(By.cssSelector("input[formcontrolname='fax']")).sendKeys(faxNumber);
 
-		driver.findElement(By.cssSelector("mat-radio-button[value='" + modeOfContact + "']")).click();
+		//driver.findElement(By.cssSelector("mat-radio-button[value='" + modeOfContact + "']")).click();
 
 		// Adding Address
 		driver.findElement(By.id("mat-input-23")).sendKeys(customerAddress);
