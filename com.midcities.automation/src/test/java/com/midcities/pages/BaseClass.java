@@ -32,7 +32,6 @@ public class BaseClass {
 	public void setupSuite() {
 
 		// This is base class
-
 		excel = new ExcelDataProvider();
 		config = new ConfigDataProvider();
 

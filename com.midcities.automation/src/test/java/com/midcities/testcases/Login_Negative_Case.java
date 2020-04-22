@@ -17,5 +17,5 @@ public class Login_Negative_Case extends BaseClass{
 		loginFunc.Login_Negative(excel.getStringCellData("Login", 2, 0), excel.getStringCellData("Login", 2, 1));
 		
 	}
-	
+			
 }

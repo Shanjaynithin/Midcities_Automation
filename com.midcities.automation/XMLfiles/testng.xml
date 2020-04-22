@@ -13,6 +13,18 @@
     <class name="com.midcities.testcases.Location_Negative_Case"/>
     <class name="com.midcities.testcases.Chassis_Positive_Case"/>
     <class name="com.midcities.testcases.Chassis_Negative_Case"/>
+    <class name="com.midcities.testcases.Equipment_Positive_Case"/>
+    <class name="com.midcities.testcases.Equipment_Negative_Case"/>
+    <class name="com.midcities.testcases.GeneralRouteRates_Positive_Case"/>
+    <class name="com.midcities.testcases.GeneralRouteRate_Negative_Case"/>
+    <class name="com.midcities.testcases.AccessorialCharges_Positive_Case"/>
+    <class name="com.midcities.testcases.AccessorialCharges_Negative_Case"/>
+    <class name="com.midcities.testcases.DriverRates_Positive_Case"/>
+    <class name="com.midcities.testcases.DriverRates_Negative_Case"/>
+    <class name="com.midcities.testcases.Orders_Positive_Case"/>
+    <class name="com.midcities.testcases.Orders_Negative_Case"/>
+    <class name="com.midcities.testcases.Dispatch_testcase"/>
+    <class name="com.midcities.testcases.Invoice_Testcase"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
